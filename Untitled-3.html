@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario de compra</title>
+    <link href="stylete.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="mihogar.png" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="titulo">
+        <img src="MiHogar3.png" alt="logo" id="imagen">
+    </div>
+    <div class="fondo">
+        <form>
+            <h2>Formulario de compra</h2>
+            Información de envio:
+            <br>
+            Apellido y nombre:<input type="text" placeholder="Apellido y Nombre" required id="persona">
+            <br>
+            Dirección:<input type="text" placeholder="Ej dr,kenny" required id="direccion">
+            telefono:<input type="tel" placeholder="Número de telefeno" required id="telefono">
+            Localidad:<input type="text" placeholder="Municipio" required id="localidad">
+            CP:<input type="number" placeholder="Código Postal" id="cp" required>
+            <br>
+
+            Categoría:
+            <select id="categoria" onchange="mostrarArticulos()">
+                <option value="">Selecciona categoría</option>
+                <option value="Camas">Camas</option>
+                <option value="Escritorios">Escritorios</option>
+                <option value="Armarios">Armarios</option>
+                <option value="Sofas">Sofas</option>
+                <option value="Mesas">Mesas</option>
+                <option value="Sillas">Sillas</option>
+            </select>
+
+            Producto:
+            <select id="articulo" disabled>
+                <option value="">Elegi tu producto</option>
+
+                <optgroup label="Camas">
+                    <option value="Cama King Capitoné">Cama King Capitoné</option>
+                    <option value="Cama King Moderna">Cama King Moderna</option>
+                    <option value="Cama King elegante">Cama King elegante</option>
+                    <option value="Cama King Contemporary">Cama King Contemporary</option>
+                </optgroup>
+
+                <optgroup label="Escritorios">
+                    <option value="Escritorio Moderno">Escritorio Moderno</option>
+                    <option value="Escritorio de Trabajo">Escritorio de Trabajo</option>
+                    <option value="Escritorio Simple">Escritorio Simple</option>
+                    <option value="Escritorio Gamer">Escritorio Gamer</option>
+                </optgroup>
+
+                <optgroup label="Armarios">
+                    <option value="Armario Moderno">Armario Moderno</option>
+                    <option value="Armario Minimalista">Armario Minimalista</option>
+                    <option value="Armario Vestidor">Armario Vestidor</option>
+                    <option value="Armario de Lujo">Armario de Lujo</option>
+                </optgroup>
+
+                <optgroup label="Sofas">
+                    <option value="Sofa beige">Sofa beige</option>
+                    <option value="Sofa Naranja">Sofa Naranja</option>
+                    <option value="Sofa Crema">Sofa Crema</option>
+                    <option value="Sofa Gris">Sofa Gris</option>
+                </optgroup>
+
+                <optgroup label="Mesas">
+                    <option value="Mesa de Madera">Mesa de Madera</option>
+                    <option value="Mesa Auxiliar">Mesa Auxiliar</option>
+                    <option value="Mesa de Madera Rustica">Mesa de Madera Rustica</option>
+                    <option value="Mesa Auxiliar de Cafe">Mesa Auxiliar de Cafe</option>
+                </optgroup>
+
+                <optgroup label="Sillas">
+                    <option value="Silla Tapizada Blanca">Silla Tapizada Blanca</option>
+                    <option value="Silla de Diseño Mid-Century">Silla de Diseño Mid-Century</option>
+                    <option value="Silla de Madera Verde">Silla de Madera Verde</option>
+                    <option value="Silla de mimbre">Silla de mimbre</option>
+                </optgroup>
+
+            </select>
+
+            <br>
+            Cantidad:<input type="number" placeholder="Cantidad" required id="cantidad">
+            <p><button type="button" onclick="mostrarValores()">Enviar</button> 
+            <button type="button" id="volver" onclick="volverPagina()">Volver</button></p>
+        </form>
+    </div>
+
+    <script src="script.java"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Inicio de Sesión
+    </title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="mihogar.png" >
+</head>
+
+<body>
+
+    <div id="titulo">
+        <img src="MiHogar3.png" alt="logo" id="imagen">
+    </div>
+
+    <div class="formulario">
+        <form id="inicio">
+            <div class="usuario">
+                <label for="usuario"></label><input type="text" id="usuario" required placeholder="usuario">
+            </div>
+            <div class="contraseña usuario">
+                <label for="contraseña"></label><input type="password" id="contraseña" required
+                    placeholder="contraseña">
+            </div>
+            <p><button id="miBoton" type="submit" onclick="validarFormulario()">Iniciar Sesión</button></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
